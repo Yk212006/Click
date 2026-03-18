@@ -3,7 +3,18 @@ node_modules/
 .next/cache/
 .next/trace*
 .next/server/chunks/
-.next/server/pages/
+
+# Exclude large image folders that exceed serverless limits
+public/products/Solid Surface/
+public/products/Flooring/
+public/products/panels/
+public/products/wallpaper/
+public/products/gym flooring/
+public/products/sports flooring/
+public/products/quartz/
+public/products/alabaster/
+public/products/rubber flooring/
+public/products/artificial grass/
 
 # Exclude documentation files
 *.md
@@ -18,8 +29,6 @@ node_modules/
 
 # Exclude large data files
 db.json
-
-# Exclude build artifacts that aren't needed
 package-lock.json
 
 # Exclude test files
