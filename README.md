@@ -1,23 +1,25 @@
-# DESCRIPTION
+# ClickInteriorSolutions
+
+## DESCRIPTION
 - HOME INTERIOR is a clone of Pepperfry.com. It is an Indian online furniture and home decor marketplace. It offers a wide range of products across categories like furniture, home decor, lamps and lighting, furnishings, kitchen and dining, appliances and more.
 - for frontend deployment we used vercel & for deploying database we used render.com
 - This project was a collaborative effort and was completed within 5 days during Masai Construct Week.
 
-# OUR TEAM
+## OUR TEAM
  - Nikhil Angolkar
  - Shakil Pendhari
  - Vikesh Hinge
  - Suraj Yadav
  - Arun Kumar Rana
  
- # TECH STACK
+ ## TECH STACK
  - HTML 
  - CSS
  - Next.js
  - Chakra-UI
  - Redux-Store
 
-# SCREEN-SHOTS
+## SCREEN-SHOTS
 <div>
 
   <img src="https://user-images.githubusercontent.com/107465553/215099346-b60e3690-b2bd-4a11-becf-1680b700a1c2.png" alt="12" border="0" />
