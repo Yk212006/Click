@@ -1,0 +1,94 @@
+.header{
+    width: 99%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+.headtext{
+    font-size: 35px;
+    color: #050505;
+    font-family: serif;
+    background-color: orangered;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.header a img {
+    width: 150px;
+    height:150px;
+    border: 2px solid white;
+    border-radius: 45%;
+    transition: 0.1s;
+
+}
+.header img:hover {
+    border: 3px solid rgb(243, 121, 8);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.sidebar{
+    width: 30%;
+    height: 99%;
+    position: sticky;
+    top:0px;
+    /* border-right: 1px solid gray; */
+}
+.productbar{
+    width: 70%;
+    border-left: 1px solid gray;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+.name{
+    /* as='b' fontSize={{base:'md',md:'xl'}} color:#aaaaaa, */
+    font-weight: 500; 
+    font-size: 18px;
+    color: #2e2c2c;
+    line-height: 22px;
+}
+.cardimg{
+    position: relative;
+}
+.filterbox{
+    padding-bottom: 20px;
+   border-bottom: 1px solid rgba(183, 181, 181,0.7);
+}
+.headerBox{
+    background :linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url("https://amazingspaces.com/wp-content/uploads/2017/05/How-to-Properly-Store-Furniture.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 25px;
+    height: 350px;
+}
+
+
+
+
+@media  all and (min-width:320px) and (max-width:479px){
+
+    .sidebar{
+     display: none;
+    }
+    .headtext{
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .productbar{
+      width: 100%;
+      margin: auto;
+    }
+   .name{
+    font-size: 14px;
+    line-height: 20px;
+   }
+   .header img {
+    width: 10%;
+    height:10% ;
+    border-radius: 10%;
+}
+.headerBox{
+    padding: 5px;
+    height: fit-content;
+}
+}
