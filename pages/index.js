@@ -139,7 +139,7 @@ export default function Home({ projects = [] }) {
             </Link>
 
             {/* Wallpaper */}
-            <Link href="/wallpaper" >
+            <Link href="/products/wall-paper" >
               <Box
                                 bg="white"
                 borderRadius="lg"
