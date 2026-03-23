@@ -3,7 +3,7 @@ import { Box, Text, Modal, ModalOverlay, ModalContent, ModalBody, ModalCloseButt
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import { getProductImageUrl } from '../lib/imageHost';
+import { getProductImageUrl } from '../lib/simpleImageHost';
 
 // Import Swiper styles
 import 'swiper/css';
