@@ -3,6 +3,7 @@ import { Box, Text, Modal, ModalOverlay, ModalContent, ModalBody, ModalCloseButt
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { getProductImageUrl } from '../lib/imageHost';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -645,10 +646,13 @@ const ProductGallery = ({ productPath }) => {
       ],
     };
 
-    console.log('Looking for images for path:', path);
-    console.log('Found images:', imageMap[path] || []);
+    const images = imageMap[path] || [];
+    const externalImages = images.map(img => getProductImageUrl(img));
     
-    return imageMap[path] || [];
+    console.log('Looking for images for path:', path);
+    console.log('Found images:', externalImages);
+    
+    return externalImages;
   };
 
   // Check for sports-flooring (with or without leading slash)
