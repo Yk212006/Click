@@ -3,7 +3,7 @@ import { Box, Text, Modal, ModalOverlay, ModalContent, ModalBody, ModalCloseButt
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import { getProductImageUrl, getFullScreenUrl } from '../lib/imageKitHost';
+import { getProductImageUrl, getFullScreenUrl, getGalleryImages } from '../lib/imageKitHost';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -659,7 +659,7 @@ const ProductGallery = ({ productPath }) => {
   if (productPath === 'sports-flooring' || productPath === '/sports-flooring') {
     console.log('🧪 Creating sports flooring gallery...');
     
-    const images = getImageList(productPath);
+    const images = getGalleryImages(productPath);
 
     return (
       <Box w="full" maxW="full">
@@ -766,7 +766,7 @@ const ProductGallery = ({ productPath }) => {
   if (productPath === 'gym-flooring' || productPath === '/gym-flooring' || productPath === '/sports-flooring/gym-flooring') {
     console.log('🧪 Creating gym flooring gallery...');
     
-    const images = getImageList(productPath);
+    const images = getGalleryImages(productPath);
 
     return (
       <Box w="full" maxW="full">
@@ -873,7 +873,7 @@ const ProductGallery = ({ productPath }) => {
   if (productPath === 'artificial-grass' || productPath === '/artificial-grass' || productPath === '/sports-flooring/artificial-grass') {
     console.log('🧪 Creating artificial grass gallery...');
     
-    const images = getImageList(productPath);
+    const images = getGalleryImages(productPath);
 
     return (
       <Box w="full" maxW="full">
@@ -947,7 +947,7 @@ const ProductGallery = ({ productPath }) => {
   if (productPath === 'rubber-flooring' || productPath === '/rubber-flooring' || productPath === '/sports-flooring/rubber-flooring') {
     console.log('🧪 Creating rubber flooring gallery...');
     
-    const images = getImageList(productPath);
+    const images = getGalleryImages(productPath);
 
     return (
       <Box w="full" maxW="full">
@@ -1021,7 +1021,7 @@ const ProductGallery = ({ productPath }) => {
   if (productPath === 'quartz' || productPath === '/quartz' || productPath === '/products/quartz') {
     console.log('🧪 Creating quartz gallery...');
     
-    const images = getImageList(productPath);
+    const images = getGalleryImages(productPath);
 
     return (
       <Box w="full" maxW="full">
@@ -1095,7 +1095,7 @@ const ProductGallery = ({ productPath }) => {
   if (productPath === 'alabaster-sheet' || productPath === '/alabaster-sheet' || productPath === '/products/alabaster') {
     console.log('🧪 Creating alabaster gallery...');
     
-    const images = getImageList(productPath);
+    const images = getGalleryImages(productPath);
 
     return (
       <Box w="full" maxW="full">
@@ -1195,7 +1195,7 @@ const ProductGallery = ({ productPath }) => {
     const galleryTitle = normalizedPath.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) + ' Gallery';
     console.log(`🧪 Creating ${galleryTitle}...`);
     
-    const images = getImageList(productPath);
+    const images = getGalleryImages(productPath);
 
     return (
       <Box w="full" maxW="full">
@@ -1269,7 +1269,7 @@ const ProductGallery = ({ productPath }) => {
     const galleryTitle = normalizedPath.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) + ' Gallery';
     console.log(`🧪 Creating ${galleryTitle}...`);
     
-    const images = getImageList(productPath);
+    const images = getGalleryImages(productPath);
 
     return (
       <Box w="full" maxW="full">
@@ -1376,7 +1376,7 @@ const ProductGallery = ({ productPath }) => {
     const galleryTitle = normalizedPath.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) + ' Gallery';
     console.log(`🧪 Creating ${galleryTitle}...`);
     
-    const images = getImageList(productPath);
+    const images = getGalleryImages(productPath);
 
     return (
       <Box w="full" maxW="full">
@@ -1483,7 +1483,7 @@ const ProductGallery = ({ productPath }) => {
     const galleryTitle = normalizedPath.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) + ' Gallery';
     console.log(`🧪 Creating ${galleryTitle}...`);
     
-    const images = getImageList(productPath);
+    const images = getGalleryImages(productPath);
 
     return (
       <Box w="full" maxW="full">
@@ -1590,7 +1590,7 @@ const ProductGallery = ({ productPath }) => {
   if (productPath === 'wall-paper' || productPath === '/wall-paper' || productPath === '/products/wallpaper') {
     console.log('🧪 Creating wallpaper gallery...');
     
-    const images = getImageList(productPath);
+    const images = getGalleryImages(productPath);
 
     return (
       <Box w="full" maxW="full">
