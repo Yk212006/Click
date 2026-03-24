@@ -2,7 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
-  swcMinify: true,
   compress: true,
   images: {
     remotePatterns: [
@@ -31,6 +30,11 @@ const nextConfig = {
         hostname: 'localhost',
         port: '3000',
         pathname: '/products/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'ik.imagekit.io',
+        pathname: '/**',
       },
     ],
   },
