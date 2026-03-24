@@ -33,7 +33,9 @@ export const user_login = (data) => async (dispatch) => {
       return;
     }
 
-    localStorage.setItem("hiUser", res.data.email);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem("hiUser", res.data.email);
+    }
     alert("SUCCESS, login successfull");
     dispatch({
       type: USER_LOGIN,
