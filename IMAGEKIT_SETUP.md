@@ -12,8 +12,8 @@
 
 ```javascript
 export const IMAGEKIT_CONFIG = {
-  urlEndpoint: 'https://ik.imagekit.io/your_actual_id', // Replace with your URL endpoint
-  publicKey: 'your_actual_public_key', // Replace with your public key
+  urlEndpoint: 'https://ik.imagekit.io/clickinteriors', // Your URL endpoint ✓
+  publicKey: 'your_actual_public_key', // Replace with your public key from dashboard
   authenticationEndpoint: '/api/imagekit-auth' // Optional
 };
 ```
