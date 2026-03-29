@@ -1,6 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.2",
+  "description": "Click Interior Solutions - Updated with gallery fixes",
   "private": true,
   "scripts": {
     "dev": "next dev",
