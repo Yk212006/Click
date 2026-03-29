@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "buildCommand": "NEXT_TURBOPACK=0 NEXT_WEBPACK_USEPOLLING=true next build",
   "functions": {
     "pages/api/**/*.js": {
       "maxDuration": 10
