@@ -42,7 +42,6 @@ function titleCaseSlug(slug) {
     "tristone": "Tristone",
     "dunes": "Dunes",
     "rehau": "Rehau",
-    "vivantha": "Vivanta",
     "vivanta": "Vivanta",
     "riya-brand": "Riya"
   };
