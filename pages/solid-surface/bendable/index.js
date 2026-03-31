@@ -11,7 +11,7 @@ const FALLBACK_BRANDS = [
   { name: "Tristone", slug: "tristone", image: "/home/tristone.png" },
   { name: "Dunes", slug: "dunes", image: "/home/dunes.png" },
   { name: "Rehau", slug: "rehau", image: "/home/rehau.png" },
-  { name: "Vivanta", slug: "vivantha", image: "/home/vivanta.png" },
+  { name: "Vivanta", slug: "vivanta", image: "/home/vivanta.png" },
   { name: "Riya", slug: "riya-brand", image: "/home/riya.png" },
 ];
 
